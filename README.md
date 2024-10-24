@@ -1,8 +1,8 @@
-# My-Daily_Python
+# My-Daily-Python
 
 以[Daily](https://www.daily.co/)的Python SDK为基，监听[Tavus](https://www.tavus.io/)服务中人物会话信息。
 
-- [My-Daily\_Python](#my-daily_python)
+- [My-Daily-Python](#my-daily-python)
   - [Tavus和Daily简介：](#tavus和daily简介)
     - [Tavus体验:](#tavus体验)
   - [项目前言:](#项目前言)
