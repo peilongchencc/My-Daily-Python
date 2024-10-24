@@ -49,9 +49,9 @@ Tavus现和Daily合作，虚拟人服务搭建在了Daily会议中，用户可�
 
 ## 项目前言:
 
-**代码环境/服务器** 必须能以socket5形式连接到Daily才能运行监听Tavus服务中人物会话信息。
+**代码环境/服务器** 必须能以socket5形式连接到Daily，才能监听Tavus服务中人物会话信息。
 
-> 笔者为了方便直接租用了AWS服务器，省去了配置科学上网的功夫，可以直接连接到Daily服务。
+> 笔者为了方便直接租用了AWS服务器，省去了配置科学上网的功夫。AWS服务器可以直接连接到Daily服务。
 
 ### 测试连接Daily服务:
 
@@ -108,7 +108,7 @@ python tavus_conversation_create.py
 
 根据 `conversation_url` 对应的网址参加会议，效果如下:
 
-![](./docs/tavus入会.png)
+<img src="./docs/tavus入会.png" alt="image" width="40%" height="40%">
 
 ![](./docs/常规入会.jpg)
 
@@ -123,6 +123,10 @@ python main.py
 通过Apifox建立连接，发送请求进行监听。
 
 ![](./docs/apifox示例.jpg)
+
+发送 `conversation_id` 后，会议界面将显示监听者(listener)入会。效果如下:
+
+![](./docs/监听者入会.jpg)
 
 
 ## 接口详解:
