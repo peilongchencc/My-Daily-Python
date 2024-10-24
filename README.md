@@ -4,7 +4,9 @@
 
 - [My-Daily\_Python](#my-daily_python)
   - [Tavus和Daily简介：](#tavus和daily简介)
+    - [Tavus体验:](#tavus体验)
   - [项目前言:](#项目前言)
+    - [测试连接Daily服务:](#测试连接daily服务)
   - [系统配置信息:](#系统配置信息)
   - [代码环境配置:](#代码环境配置)
     - [Conda环境配置:](#conda环境配置)
@@ -28,19 +30,30 @@ Daily 是一个**实时视频和音频通信**的 API 服务提供商，类似�
 
 Tavus现和Daily合作，虚拟人服务搭建在了Daily会议中，用户可在Daily会议中和虚拟人实时交互。
 
-读者可运行项目根目录的 `tavus` 文件体验一下与数字人交互。运行顺序:
+### Tavus体验:
+
+读者可运行项目根目录的 `tavus` 文件体验一下与数字人交互。操作顺序如下:
 
 1. 创建Tavus账号，[获取API-KEY](https://platform.tavus.io/api-keys)。
+
 2. 终端运行 `tavus_replica_create.py` 配置tavus虚拟人认知能力。
+
 3. 终端运行 `tavus_conversation_create.py` 创建Tavus对话。
 
-🚨警告: 请读者根据自身情况决定是否升级Tavus服务，笔者使用Daily、Tavus仅用于研究/学习，不作任何推荐。
+🚨注意: 请读者根据自身情况决定是否升级Tavus服务，笔者使用Daily、Tavus仅用于研究/学习，不作任何推荐。
+
+毕竟，Tavus还是比较贵的。如果只用于测试，免费版的三分钟也足够用了。
+
+![](./docs/tavus_plan.png)
+
 
 ## 项目前言:
 
-注意: 代码环境/服务器必须能以socket5形式连接到Daily才能运行监听Tavus服务中人物会话信息。
+**代码环境/服务器** 必须能以socket5形式连接到Daily才能运行监听Tavus服务中人物会话信息。
 
 > 笔者为了方便直接租用了AWS服务器，省去了配置科学上网的功夫，可以直接连接到Daily服务。
+
+### 测试连接Daily服务:
 
 测试方法很简单，运行 `main.py` 后查看入会成员是否有代码中定义的 "listener" 角色即可。
 
